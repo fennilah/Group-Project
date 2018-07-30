@@ -40,6 +40,20 @@ class User:
 
         return user
 
+    def login(self, username, password):
+		username = input("Enter your username")
+		password = input("Enter your password")
+		if username in Users.user:
+			if password == Users.user['username'][2]:
+				print ('Successfully logged in')
+			else:
+				print ('invalid password')
+		else:
+			print ('Username doese not exist')
+			
+
+
+
 
 
 
